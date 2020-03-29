@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 24px;
     height: 30%;
     z-index: 100;
-    background: url("../../img/decor/decor-header-c.png") center/cover no-repeat; }
+    background: url("../img/decor/decor-header-c.png") center/cover no-repeat; }
   .fullscrin__row {
     display: -webkit-box;
     display: -moz-box;
@@ -175,10 +175,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center; }
   .fullscrin__decor {
     height: 50%;
-    background: url("../../img/decor/decor-kvadr.png") left/100% 100% no-repeat; }
+    background: url("../img/decor/decor-kvadr.png") left/100% 100% no-repeat; }
     .fullscrin__decor_l {
       height: 80%;
-      background: url("../../img/decor/decor-white.png") center/45% 100% no-repeat; }
+      background: url("../img/decor/decor-white.png") center/45% 100% no-repeat; }
   .fullscrin__columnBody {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 80%;
