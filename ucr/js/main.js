@@ -47,8 +47,8 @@ function adaptive_function() {
 }
 	adaptive_function();
 //SLIDERS
-if($('.bg-slider').length>0){
-	$('.bg-slider').slick({
+if($('.fullscrin__bg').length>0){
+	$('.fullscrin__bg').slick({
 		arrows: false,
 		dots: false,
 		autoplay: true
@@ -902,6 +902,7 @@ if(isMobile.iOS()){
 $('.menu__burger').click(function(event) {
 	$(this).toggleClass('active');
 	$('.menu__text').toggleClass('active');
+	$('.bg-slider').toggleClass('active');
 	if($(this).hasClass('active')){
 		$('body').data('scroll',$(window).scrollTop());
 	}
