@@ -143,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 30%;
     z-index: 100;
     background: url("../img/decor/decor-header-c.png") center/cover no-repeat; }
+    @media (max-height: 600px) {
+      .fullscrin:before {
+        display: none; } }
   .fullscrin__row {
     display: -webkit-box;
     display: -moz-box;
@@ -156,29 +159,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     z-index: 100; }
-  .fullscrin__columnDecor {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 160px;
-    flex: 0 1 160px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    font-size: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .fullscrin__decor {
-    height: 50%;
-    background: url("../img/decor/decor-kvadr.png") left/100% 100% no-repeat; }
-    .fullscrin__decor_l {
-      height: 80%;
-      background: url("../img/decor/decor-white.png") center/45% 100% no-repeat; }
   .fullscrin__columnBody {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 80%;
@@ -221,6 +201,10 @@ h1, h2, h3, h4, h5, h6 {
           font-weight: 700;
           font-size: 32px;
           line-height: 50px; } }
+      @media (max-height: 400px) {
+        .fullscrin__body h1 {
+          font-size: 28px;
+          line-height: 40px; } }
     .fullscrin__body p {
       font-weight: 100;
       font-size: 32px;
@@ -234,13 +218,20 @@ h1, h2, h3, h4, h5, h6 {
         .fullscrin__body p {
           font-size: 24px;
           line-height: 35px; } }
+      @media (max-height: 400px) {
+        .fullscrin__body p {
+          font-size: 20px;
+          line-height: 30px; } }
 
 .bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 95%;
-  height: 90%; }
+  height: 90vh; }
+  @media (max-width: 479.98px) {
+    .bg {
+      width: 100%; } }
   .bg .slick-list {
     height: 100%; }
   .bg .slick-track {
@@ -253,6 +244,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     position: relative; }
+    .bg__img img {
+      opacity: 0; }
     .bg__img:after {
       content: '';
       position: absolute;
@@ -499,7 +492,66 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh; }
+  min-height: 100vh; }
+
+.decorBlock {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 160px;
+  flex: 0 1 160px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .decorBlock__decor_hl {
+    height: 50%;
+    background: url("../img/decor/decor-kvadr.png") left/100% 100% no-repeat; }
+  .decorBlock__decor_hr {
+    height: 80%;
+    background: url("../img/decor/decor-white.png") center/45% 100% no-repeat; }
+    @media (max-width: 520px) {
+      .decorBlock__decor_hr {
+        display: none; } }
+  .decorBlock__decor_r {
+    height: 80%;
+    background: url("../img/decor/decor-white.png") center/45% 100% no-repeat; }
+    @media (max-width: 520px) {
+      .decorBlock__decor_r {
+        display: none; } }
+  .decorBlock__decor_l {
+    height: 50%;
+    background: url("../img/decor/decor-kvadr.png") left/100% 100% no-repeat; }
+
+.compani {
+  padding: 160px 0 108px 0; }
+  .compani__columnBody {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80%;
+    flex: 0 1 80%; }
+
+.topBlock {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0; }
+  .topBlock__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%; }
+    .topBlock__column:first-child {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 66.666%;
+      flex: 0 1 66.666%; }
 
 .form-row {
   display: -webkit-box;
